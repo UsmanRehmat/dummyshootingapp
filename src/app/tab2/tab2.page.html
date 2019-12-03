@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Tab Two
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    
+    <ion-label id="profile_image" color="primary" stacked>Video</ion-label>
+    <ion-input type="file" accept=".mp4" id="upload" [(ngModel)]="imageFilePath" (ionChange)="imageFilePath_change($event)"></ion-input>
+  </ion-item>
+  <ion-button color="primary" (click)="openFile()"> Choose a file </ion-button>
+</ion-content>
